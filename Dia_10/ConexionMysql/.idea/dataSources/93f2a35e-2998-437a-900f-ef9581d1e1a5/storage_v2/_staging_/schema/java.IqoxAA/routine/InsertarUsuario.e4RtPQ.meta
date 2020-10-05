@@ -1,0 +1,2 @@
+#n:InsertarUsuario
+#i:(varchar(20),varchar(20),varchar(20))
