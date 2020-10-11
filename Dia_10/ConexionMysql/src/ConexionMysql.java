@@ -3,17 +3,19 @@ import java.sql.*;
 public class ConexionMysql {
 
     private static Connection connection = null;
-    private static CallableStatement  callableStatement = null;
+    private static CallableStatement callableStatement = null;
     private static PreparedStatement preparedStatement = null;
     private static ResultSet resultSet = null;
     private static String url = "jdbc:mysql://localhost:3306/java?serverTimezone=GMT", user = "root", pass = "";
 
     public static void main(String[] args) {
         EjercicioCallableStatement();
-        EjercicioPreparedStatement();
+        EjercicioPlAnonimo();
+//        EjercicioPreparedStatement();
 
     }
 
+    //---------------------------------------------------------------------------------------------
     public static void EjercicioCallableStatement() {
 
         long inicio = System.currentTimeMillis();
@@ -28,7 +30,6 @@ public class ConexionMysql {
             callableStatement = connection.prepareCall("{call MostrarUsuarioId(?)}");
             callableStatement.setInt(1, 4);
             resultSet = callableStatement.executeQuery();
-
 
             while (resultSet.next()) {
                 System.out.println(resultSet.getString("nombre") + " " +
@@ -47,15 +48,48 @@ public class ConexionMysql {
 
             connection.close();
 
+            //lombok dbutils log4j sonarqube
         } catch (SQLException e) {
             e.printStackTrace();
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
         long fin = System.currentTimeMillis();
-        System.out.println("CallableStatement: " + (fin-inicio));
+        System.out.println("CallableStatement: " + (fin - inicio));
     }
 
+    //-------------------------------------------------------------------------------------------
+    public static void EjercicioPlAnonimo() {
+        long inicio = System.currentTimeMillis();
+
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            connection = DriverManager.getConnection(url, user, pass);
+
+            preparedStatement = connection.prepareStatement("set @numero5 = 20;");
+            resultSet = preparedStatement.executeQuery();
+            preparedStatement = connection.prepareStatement("set @numero6 = 15;");
+            resultSet = preparedStatement.executeQuery();
+            preparedStatement = connection.prepareStatement("select sum(@numero5+@numero6);");
+            resultSet = preparedStatement.executeQuery();
+
+            while (resultSet.next()) {
+                System.out.println("PL/SQL Anonimo: " + resultSet.getObject(1));
+            }
+
+            preparedStatement.close();
+            connection.close();
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        long fin = System.currentTimeMillis();
+        System.out.println("PreparedStatement: " + (fin - inicio));
+    }
+
+    //------------------------------------------------------------------------------------------------
     public static void EjercicioPreparedStatement() {
         long inicio = System.currentTimeMillis();
 
@@ -82,6 +116,6 @@ public class ConexionMysql {
             e.printStackTrace();
         }
         long fin = System.currentTimeMillis();
-        System.out.println("PreparedStatement: " + (fin-inicio));
+        System.out.println("PreparedStatement: " + (fin - inicio));
     }
 }
