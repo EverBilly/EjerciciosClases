@@ -1,0 +1,8 @@
+<root>
+    <item name='java.io.FileInputStream'>
+        <annotation name='java.lang.Deprecated'/>
+    </item>
+    <item name='java.io.InputStream'>
+        <annotation name='java.lang.Deprecated'/>
+    </item>
+</root>

@@ -6,24 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf10eae9-3e5f-443e-8aa3-fb3ce74785e6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conexion.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ever/Conexion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ever/Usuario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dia_10/ConexionMysql/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Dia_10/ConexionMysql/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dia_10/ConexionMysql/out/production/ConexionMysql/ConexionMysql.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Dia_10/ConexionMysql/out/production/ConexionMysql/ConexionMysql.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ever/MyViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ever/MyViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.zul" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.zul" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ever/MyViewModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ever/MyViewModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/web1.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/web1.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/web1/WEB-INF/classes/com/ever/MyViewModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/web1/WEB-INF/classes/com/ever/MyViewModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/web1/index.zul" beforeDir="false" afterPath="$PROJECT_DIR$/target/web1/index.zul" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web1.iml" beforeDir="false" />
-    </list>
+    <list default="true" id="cf10eae9-3e5f-443e-8aa3-fb3ce74785e6" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -230,7 +213,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1602476646760" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1602476921155" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -340,12 +323,12 @@
       <updated>1602371847890</updated>
       <workItem from="1602371851292" duration="4734000" />
       <workItem from="1602394274354" duration="1301000" />
-      <workItem from="1602429653170" duration="23737000" />
+      <workItem from="1602429653170" duration="23991000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29772000" />
+    <option name="totallyTimeSpent" value="30026000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
