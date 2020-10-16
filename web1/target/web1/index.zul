@@ -1,13 +1,13 @@
 <zk>
-	<!--<window apply="org.zkoss.bind.BindComposer"-->
-		<!--viewModel="@id('vm')@init('com.ever.MyViewModel')"-->
-		<!--validationMessages="@id('vmsgs')">-->
-		<!--<hlayout>count: <label value="@load(vm.count)" /></hlayout>-->
-		<!--<button label="add" onClick="@command('cmd')"/>-->
-	<!--</window>-->
+	<window apply="org.zkoss.bind.BindComposer"
+		viewModel="@id('vm')@init('com.ever.MyViewModel')"
+		validationMessages="@id('vmsgs')">
+		<hlayout>count: <label value="@load(vm.count)" /></hlayout>
+		<button label="add" onClick="@command('cmd')"/>
+	</window>
 
 	<window apply="org.zkoss.bind.BindComposer"
-			viewModel="@id('vm')@init('com.ever.MyViewModel')"
+			viewModel="@id('vm')@init('com.ever.Usuario')"
 			validationMessages="@id('vmsgs')"
 			title="Lista de Usuarios" width="500px" border="normal">
 		<hbox align="center">Name:
@@ -17,7 +17,7 @@
 		</hbox>
 	</window>
 
-	<window title="Usuarios" border="normal">
+	<window title="Usuarios" border="normal" apply="com.ever.Usuario">
 			<listbox id="listaUsuarios">
 				<listhead>
 					<listheader label="Id"/>
@@ -33,6 +33,7 @@
 					<listcell label="55302144"/>
 				</listitem>
 			</listbox>
+		<button id="btnMostrar" label="Muestra Usuarios"/>
 	</window>
 
 	<window title="Prueba" border="normal">

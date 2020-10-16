@@ -1,0 +1,37 @@
+<zk>
+      <window title="Mostrar Usuarios" border="normal" apply="vistas_modelos.UsuarioV">
+          <grid id="registroUsuarios">
+              <columns>
+                  <column label="Nombre"/>
+                  <column label="Apellido"/>
+                  <column label="Telefono"/>
+              </columns>
+              <rows>
+                  <row>
+                      <hlayout><textbox id="nombreUsuario" width="250px" constraint="no empty"/></hlayout>
+                      <hlayout><textbox id="apellidoUsuario" width="250px" constraint="no empty"/></hlayout>
+                      <hlayout><textbox id="telefonoUsuario" width="250px" constraint="no empty"/></hlayout>
+                  </row>
+              </rows>
+          </grid>
+          <button id="btnGuardar" label="Guardar"/>
+
+          <button id="btnEliminar" label="Eliminar" style="background-color:red;"/>
+          <button id="btnModificar" label="Modificar" style="background-color:orange;"/>
+          <separator/><separator/>
+
+          <listbox id="listboxUsuarios">
+            <listhead>
+                <listheader label="Nombre"/>
+                <listheader label="Apellido"/>
+                <listheader label="Telefono"/>
+                <listheader label="Id"/>
+                <listheader label="Opciones">
+
+                </listheader>
+            </listhead>
+
+
+        </listbox>
+    </window>
+</zk>

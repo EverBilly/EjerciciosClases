@@ -1,0 +1,46 @@
+<zk>
+    <window id="myWin" title="Prueba Usuarios" border="normal"
+            apply="vistas_modelos.UsuarioV">
+
+        <grid id="registroUsuarios">
+            <columns>
+                <column label="Nombre"/>
+                <column label="Apellido"/>
+                <column label="Telefono"/>
+            </columns>
+            <rows>
+                <row>
+                    <hlayout><textbox id="nombreUsuario" width="250px" constraint="no empty"/></hlayout>
+                    <hlayout><textbox id="apellidoUsuario" width="250px" constraint="no empty"/></hlayout>
+                    <hlayout><textbox id="telefonoUsuario" width="250px" constraint="no empty"/></hlayout>
+                </row>
+            </rows>
+        </grid>
+        <button id="btnGuardar" label="Guardar"/>
+
+        <button id="btnEliminar" label="Eliminar" style="background-color:red;"/>
+        <button id="btnModificar" label="Modificar" style="background-color:orange;"/>
+        <separator/><separator/>
+
+
+        <listbox id="listboxUsuarios" model="@{myWin$UsuarioV.cargarUsuarios}"
+        mold="paging" pageSize="8">
+            <listhead>
+                <listheader label="Nombre"/>
+                <listheader label="apellido"/>
+                <listheader label="telefono"/>
+                <!--<listheader label="id"/>-->
+                <listheader label="opciones"/>
+            </listhead>
+
+            <listitem self="@{each=data_list}">
+                <listcell label="@{data_list.nombre}"/>
+                <listcell label="@{data_list.apellido}"/>
+                <listcell label="@{data_list.telefono}"/>
+                <!--<listcell label="@{data_list.id}"/>-->
+            </listitem>
+
+
+        </listbox>
+    </window>
+</zk>
