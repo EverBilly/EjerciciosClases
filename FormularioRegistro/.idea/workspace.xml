@@ -7,6 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c4531c8-fa4d-4e38-97a7-f3479b9075e2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/sonar/.sonar_lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/sonar/report-task.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FormularioRegistro.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controladores/MyViewModel.java" beforeDir="false" />
@@ -239,7 +242,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1603089190941" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1603091898468" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/ZK-Project" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -355,12 +358,12 @@
       <workItem from="1602814445860" duration="467000" />
       <workItem from="1602870341108" duration="4576000" />
       <workItem from="1602892079966" duration="86000" />
-      <workItem from="1602893897017" duration="14780000" />
+      <workItem from="1602893897017" duration="15364000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98537000" />
+    <option name="totallyTimeSpent" value="99121000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
