@@ -1,6 +1,7 @@
 package vistas_modelos;
 
 import controladores_dao.UsuarioDao;
+import lombok.extern.log4j.Log4j2;
 import modelos.Usuario;
 import org.zkoss.zk.ui.Component;
 import org.zkoss.zk.ui.event.Event;
@@ -15,10 +16,10 @@ import javax.sql.DataSource;
 import java.sql.SQLException;
 import java.util.List;
 
+@Log4j2
 public class UsuarioV  extends Usuario {
 
     private Listbox listboxUsuarios;
-
     private Textbox nombreUsuario;
     private Textbox apellidoUsuario;
     private Textbox telefonoUsuario;
@@ -38,15 +39,14 @@ public class UsuarioV  extends Usuario {
         return dataSource;
     }
 
-
     private void cargarUsuarios() {
         List<Usuario> list = null;
         try {
             list = UsuarioDao.getInstance().mostrarUsuarios();
         } catch (SQLException e) {
-            e.printStackTrace();
+            log.debug("Error" + e.getMessage());
         } catch (NamingException e) {
-            e.printStackTrace();
+            log.debug("No se ha mostrado nada: " + e.getMessage());
         }
 
         if (list != null && list.size() > 0) {
@@ -74,9 +74,9 @@ public class UsuarioV  extends Usuario {
                 listcell.setParent(listitem);
                 listcell.setLabel(usuario1.getTelefono());
 
-//                listcell = new Listcell();
-//                listcell.setParent(listitem);
-//                listcell.setLabel(String.valueOf(usuario1.getId()));
+                listcell = new Listcell();
+                listcell.setParent(listitem);
+                listcell.setLabel(String.valueOf(usuario1.getId()));
 
                 listcell = new Listcell();
                 listcell.setAttribute("data", listcell);
@@ -104,14 +104,15 @@ public class UsuarioV  extends Usuario {
 
             if(result == 0) {
                 Notification.show("No Registrado");
-                System.out.println("Error");
+                log.debug("No Insertado");
             }
             else {
                 Notification.show("Usuario Registrado");
-                System.out.println("Insertado");
+                log.debug("Insertado");
             }
         } catch (NamingException e) {
-            e.printStackTrace();
+            log.debug("Error al Insertar: " + e.getMessage());
+
         }
     }
 
@@ -142,15 +143,15 @@ public class UsuarioV  extends Usuario {
             result = UsuarioDao.getInstance().actualizaUsuario(usuario1);
 
             if(result == 0) {
-                Notification.show("No Registrado");
-                System.out.println("Error");
+                Notification.show("Error al Actualizar");
+                log.debug("No Actualizado");
             }
             else {
                 Notification.show("Usuario Actualizado");
-                System.out.println("Actualizado");
+                log.debug("Actualizado");
             }
         } catch (NamingException e) {
-            e.printStackTrace();
+            log.debug("Error al Actualizar: " + e.getMessage());
         }
     }
 

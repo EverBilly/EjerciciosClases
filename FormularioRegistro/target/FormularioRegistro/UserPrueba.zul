@@ -24,23 +24,31 @@
 
 
         <listbox id="listboxUsuarios" model="@{myWin$UsuarioV.cargarUsuarios}"
-        mold="paging" pageSize="8">
+        mold="paging" pageSize="8" selectedItem="@bind(vm.selectedContributor)">
             <listhead>
                 <listheader label="Nombre"/>
                 <listheader label="apellido"/>
                 <listheader label="telefono"/>
-                <!--<listheader label="id"/>-->
-                <listheader label="opciones"/>
+                <listheader label="id"/>
             </listhead>
-
-            <listitem self="@{each=data_list}">
-                <listcell label="@{data_list.nombre}"/>
-                <listcell label="@{data_list.apellido}"/>
-                <listcell label="@{data_list.telefono}"/>
-                <!--<listcell label="@{data_list.id}"/>-->
-            </listitem>
-
-
         </listbox>
+
+        <grid>
+            <auxhead>
+                <auxheader colspan="3" sclass="topic" label="Editar"/>
+            </auxhead>
+            <columns>
+                <column label="nombre"/>
+                <column label="apellido"/>
+                <column label="telefono"/>
+            </columns>
+            <rows>
+                <row>
+                    <textbox value="@bind(vm.selectedContributor.nombre)"/>
+                    <textbox value="@bind(vm.selectedContributor.apellido)"/>
+                    <textbox value="@bind(vm.selectedContributor.telefono)"/>
+                </row>
+            </rows>
+        </grid>
     </window>
 </zk>

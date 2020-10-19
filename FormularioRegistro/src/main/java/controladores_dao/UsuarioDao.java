@@ -1,5 +1,6 @@
 package controladores_dao;
 
+import lombok.extern.log4j.Log4j2;
 import modelos.Usuario;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
@@ -10,6 +11,7 @@ import javax.sql.DataSource;
 import java.sql.SQLException;
 import java.util.List;
 
+@Log4j2
 public class UsuarioDao {
 
     private DataSource dataSource;
@@ -53,7 +55,7 @@ public class UsuarioDao {
         try {
             result = queryRunner.update(SQL_INSERT, params);
         } catch (SQLException e) {
-            e.printStackTrace();
+            log.debug("Error al Insertar" + e.getMessage());
         }
         return result;
     }
@@ -68,7 +70,7 @@ public class UsuarioDao {
         try {
             result = queryRunner.update(SQL_UPDATE, params);
         } catch (SQLException e) {
-            e.printStackTrace();
+            log.debug("Error al Actualizar" + e.getMessage());
         }
         return result;
     }
@@ -82,7 +84,7 @@ public class UsuarioDao {
         try {
             result = queryRunner.update(SQL_DELETE, params);
         } catch (SQLException e) {
-            e.printStackTrace();
+            log.debug("Error al Eliminar" + e.getMessage());
         }
         return result;
     }

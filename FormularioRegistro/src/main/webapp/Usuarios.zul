@@ -1,5 +1,7 @@
 <zk>
-      <window title="Mostrar Usuarios" border="normal" apply="vistas_modelos.UsuarioV">
+    <!--<?init class="org.zkoss.zkplus.databind.AnnotateDataBinderInit" ?>-->
+
+    <window title="Mostrar Usuarios" border="normal" apply="vistas_modelos.UsuarioV">
           <grid id="registroUsuarios">
               <columns>
                   <column label="Nombre"/>
