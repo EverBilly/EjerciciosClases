@@ -29,9 +29,14 @@ public class ListaAliens {
         String user = "ever";
         String pass = "Ever2020--";
 
+//        String url = "jdbc:mysql://172.16.200.28:3306/cons_rr_ss";
+//        String user = "cons_rs_des";
+//        String pass = "cons_rs_des";
+
         try {
             Class.forName("com.mysql.jdbc.Driver");
             connection = DriverManager.getConnection(url, user, pass);
+            System.out.println("Conexion Exitosa");
         } catch (Exception e) {
             System.out.println("Error: " + e.getMessage());
         }
