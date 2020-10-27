@@ -162,4 +162,21 @@ public class UsuarioV  extends Usuario {
     private void eliminaUsuario() {
 
     }
+
+    public void onClick$btnExportar(Event event) throws NamingException {
+        Messagebox.show("Presionado");
+        Usuario usuario = new Usuario();
+        UsuarioDao.getInstance().Exportar(usuario);
+    }
+
+    public void onClick$btnRegistros(Event event) throws NamingException {
+        Messagebox.show("Registros");
+        UsuarioDao.getInstance().EjercicioPreparedStatement();
+    }
+
+    public void onClick$btnRegistrosPoi(Event event) throws NamingException {
+        Usuario usuario = new Usuario();
+        UsuarioDao.getInstance().ExportaPOI(usuario);
+    }
+
 }

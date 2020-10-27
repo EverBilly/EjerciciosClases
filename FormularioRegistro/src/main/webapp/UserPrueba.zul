@@ -32,6 +32,9 @@
                 <listheader label="id"/>
             </listhead>
         </listbox>
+        <button id="btnExportar" label="Exportar Excel"/>
+        <button id="btnRegistros" label="Registros"/>
+        <button id="btnRegistrosPoi" label="Registros POI"/>
 
         <grid>
             <auxhead>
