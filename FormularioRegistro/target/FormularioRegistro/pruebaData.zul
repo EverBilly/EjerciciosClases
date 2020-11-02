@@ -1,0 +1,25 @@
+<zk>
+    <window width="600px" border="normal" apply="org.zkoss.bind.BindComposer"
+            viewModel="@id('vm') @init('vistas_modelos.Usuario2')">
+    <!--<window width="600px" border="normal" apply=""-->
+            <!--viewModel="@id('vm') @init('vistas_modelos.Usuario2')">-->
+        <button label="Mostrar" onClick="@command('mostrarVista')"/>
+
+        <listbox  model="@bind(vm.listUsuarios)" mold="paging" pageSize="20">
+                <listhead>
+                    <listheader label="NOMBRE"/>
+                    <listheader label="APELLIDO"/>
+                    <listheader label="TELEFONO"/>
+                    <listheader label="ID"/>
+                </listhead>
+            <template name="model">
+                <listitem>
+                    <listcell label="@bind(each.nombre)"/>
+                    <listcell label="@bind(each.apellido)"/>
+                    <listcell label="@bind(each.telefono)"/>
+                    <listcell label="@bind(each.id)"/>
+                </listitem>
+            </template>
+            </listbox>
+    </window>
+</zk>

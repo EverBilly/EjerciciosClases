@@ -17,14 +17,14 @@
             </rows>
         </grid>
         <button id="btnGuardar" label="Guardar"/>
-
+        <button id="btnCargar" label="Cargar Data"/>
         <button id="btnEliminar" label="Eliminar" style="background-color:red;"/>
         <button id="btnModificar" label="Modificar" style="background-color:orange;"/>
         <separator/><separator/>
 
 
         <listbox id="listboxUsuarios" model="@{myWin$UsuarioV.cargarUsuarios}"
-        mold="paging" pageSize="8" selectedItem="@bind(vm.selectedContributor)">
+        mold="paging" pageSize="20" selectedItem="@bind(vm.selectedContributor)">
             <listhead>
                 <listheader label="Nombre"/>
                 <listheader label="apellido"/>

@@ -7,19 +7,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c4531c8-fa4d-4e38-97a7-f3479b9075e2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/vistas_modelos/Usuario2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AppsWeb/simple_webapp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AppsWeb/simple_webapp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AppsWeb/web1/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AppsWeb/web1/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AppsWeb/web1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AppsWeb/web1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Dia_10/ConexionMysql/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Dia_10/ConexionMysql/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dia_10/ConexionMysql/out/production/ConexionMysql/ConexionMysql.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Dia_10/ConexionMysql/out/production/ConexionMysql/ConexionMysql.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controladores_dao/UsuarioDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controladores_dao/UsuarioDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/vistas_modelos/UsuarioV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vistas_modelos/UsuarioV.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/UserPrueba.zul" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/UserPrueba.zul" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.zul" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.zul" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/FormularioRegistro.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/FormularioRegistro.war" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/FormularioRegistro/UserPrueba.zul" beforeDir="false" afterPath="$PROJECT_DIR$/target/FormularioRegistro/UserPrueba.zul" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/FormularioRegistro/WEB-INF/classes/controladores_dao/UsuarioDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/FormularioRegistro/WEB-INF/classes/controladores_dao/UsuarioDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/FormularioRegistro/WEB-INF/classes/vistas_modelos/UsuarioV.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/FormularioRegistro/WEB-INF/classes/vistas_modelos/UsuarioV.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/FormularioRegistro/WEB-INF/lib/commons-codec-1.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/FormularioRegistro/index.zul" beforeDir="false" afterPath="$PROJECT_DIR$/target/FormularioRegistro/index.zul" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/controladores_dao/UsuarioDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controladores_dao/UsuarioDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/vistas_modelos/UsuarioV.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vistas_modelos/UsuarioV.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../prueba/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../prueba/.idea/workspace.xml" afterDir="false" />
@@ -33,68 +35,36 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.48865354">
+    <splitter split-orientation="horizontal" split-proportion="0.63161874">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/pom.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2040">
-                  <caret line="120" selection-start-line="120" selection-end-line="120" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/webapp/index.zul">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret column="4" selection-start-column="4" selection-end-column="4" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/webapp/Usuarios.zul">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="34">
-                  <caret line="2" selection-start-line="2" selection-end-line="2" />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/webapp/UserPrueba.zul">
+            <entry file="file://$PROJECT_DIR$/src/main/java/controladores_dao/UsuarioDao.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="223">
-                  <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/vistas_modelos/UsuarioV.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="257">
-                  <caret line="68" column="39" lean-forward="true" selection-start-line="68" selection-start-column="39" selection-end-line="68" selection-end-column="39" />
+                <state relative-caret-position="27">
+                  <caret line="303" column="71" selection-start-line="303" selection-start-column="71" selection-end-line="303" selection-end-column="71" />
                   <folding>
                     <element signature="imports" expanded="true" />
+                    <element signature="method#insertaUsuario#0;class#UsuarioDao#0" />
+                    <element signature="method#Conexion#0;class#UsuarioDao#0" />
+                    <element signature="method#EjercicioPreparedStatement#0;class#UsuarioDao#0" />
+                    <element signature="method#Exportar#0;class#UsuarioDao#0" />
+                    <element signature="method#actualizaUsuario#0;class#UsuarioDao#0" />
+                    <element signature="method#eliminarUsuario#0;class#UsuarioDao#0" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/controladores_dao/UsuarioDao.java">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/vistas_modelos/Usuario2.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="391">
-                  <caret line="212" column="28" selection-start-line="212" selection-start-column="28" selection-end-line="212" selection-end-column="28" />
+                <state relative-caret-position="352">
+                  <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
                   <folding>
                     <element signature="imports" expanded="true" />
+                    <element signature="e#389#390#0" expanded="true" />
+                    <element signature="e#424#425#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -103,8 +73,62 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://C:/apache-tomcat-9.0.37/conf/context.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="68">
+                <state relative-caret-position="496">
                   <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/UserPrueba.zul">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="416">
+                  <caret line="34" column="31" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="31" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/modelos/Usuario.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="80">
+                  <caret line="8" column="51" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="51" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/vistas_modelos/UsuarioV.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="402">
+                  <caret line="185" lean-forward="true" selection-start-line="185" selection-end-line="185" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="method#getDataSource#0;class#UsuarioV#0" />
+                    <element signature="method#cargarUsuarios#0;class#UsuarioV#0" />
+                    <element signature="method#guardarUsuario#0;class#UsuarioV#0" />
+                    <element signature="method#onDoubleClicked#0;class#UsuarioV#0" />
+                    <element signature="method#actualizarUsuario#0;class#UsuarioV#0" />
+                    <element signature="method#onClick$btnRegistros#0;class#UsuarioV#0" />
+                    <element signature="method#onClick$btnRegistrosPoi#0;class#UsuarioV#0" />
+                    <element signature="method#cargarUsuarios2#0;class#UsuarioV#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/pruebaData.zul">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="336">
+                  <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
                 </state>
               </provider>
             </entry>
@@ -133,11 +157,13 @@
         <option value="$PROJECT_DIR$/src/main/java/controladores/MyViewModel.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="C:/apache-tomcat-9.0.37/conf/context.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.zul" />
         <option value="$PROJECT_DIR$/src/main/java/modelos/Usuario.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/Usuarios.zul" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.zul" />
         <option value="$PROJECT_DIR$/src/main/webapp/UserPrueba.zul" />
+        <option value="$PROJECT_DIR$/src/main/webapp/pruebaData.zul" />
+        <option value="$PROJECT_DIR$/src/main/java/vistas_modelos/Usuario2.java" />
         <option value="$PROJECT_DIR$/src/main/java/vistas_modelos/UsuarioV.java" />
         <option value="$PROJECT_DIR$/src/main/java/controladores_dao/UsuarioDao.java" />
       </list>
@@ -167,9 +193,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="676" />
-    <option name="width" value="697" />
-    <option name="height" value="735" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="699" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -177,8 +204,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -228,6 +255,13 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="vistas_modelos" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="FormularioRegistro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FormularioRegistro" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -237,8 +271,8 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1603094399066" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../TalkMe" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1604102536401" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="vcs.Subversion" />
@@ -356,12 +390,17 @@
       <workItem from="1602893897017" duration="17021000" />
       <workItem from="1603094541538" duration="8168000" />
       <workItem from="1603726594722" duration="29154000" />
-      <workItem from="1603758343978" duration="3886000" />
+      <workItem from="1603758343978" duration="4157000" />
+      <workItem from="1603810121953" duration="17096000" />
+      <workItem from="1603913824816" duration="830000" />
+      <workItem from="1603987198397" duration="887000" />
+      <workItem from="1604070796947" duration="16694000" />
+      <workItem from="1604109666376" duration="1404000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141986000" />
+    <option name="totallyTimeSpent" value="179168000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -373,7 +412,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-7" y="2" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49756098" weight="0.24962178" />
@@ -386,7 +425,7 @@
       <window_info id="Web" order="7" side_tool="true" weight="0.32980332" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.44353518" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.45826513" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -466,67 +505,100 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controladores/Principal.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/controladores/MyViewModel.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/modelos/Usuario.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2040">
+        <state>
           <caret line="120" selection-start-line="120" selection-end-line="120" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.zul">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="4" selection-start-column="4" selection-end-column="4" />
+        <state relative-caret-position="256">
+          <caret line="16" column="22" selection-end-line="110" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/Usuarios.zul">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="16">
+          <caret line="1" column="70" selection-start-line="1" selection-start-column="48" selection-end-line="1" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vistas_modelos/Usuario2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#389#390#0" expanded="true" />
+            <element signature="e#424#425#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://C:/apache-tomcat-9.0.37/conf/context.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
+        <state relative-caret-position="496">
           <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/UserPrueba.zul">
+    <entry file="file://$PROJECT_DIR$/src/main/java/modelos/Usuario.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vistas_modelos/UsuarioV.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="68" column="39" lean-forward="true" selection-start-line="68" selection-start-column="39" selection-end-line="68" selection-end-column="39" />
+        <state relative-caret-position="80">
+          <caret line="8" column="51" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pruebaData.zul">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/UserPrueba.zul">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="34" column="31" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controladores_dao/UsuarioDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="212" column="28" selection-start-line="212" selection-start-column="28" selection-end-line="212" selection-end-column="28" />
+        <state relative-caret-position="27">
+          <caret line="303" column="71" selection-start-line="303" selection-start-column="71" selection-end-line="303" selection-end-column="71" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#insertaUsuario#0;class#UsuarioDao#0" />
+            <element signature="method#Conexion#0;class#UsuarioDao#0" />
+            <element signature="method#EjercicioPreparedStatement#0;class#UsuarioDao#0" />
+            <element signature="method#Exportar#0;class#UsuarioDao#0" />
+            <element signature="method#actualizaUsuario#0;class#UsuarioDao#0" />
+            <element signature="method#eliminarUsuario#0;class#UsuarioDao#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vistas_modelos/UsuarioV.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="185" lean-forward="true" selection-start-line="185" selection-end-line="185" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getDataSource#0;class#UsuarioV#0" />
+            <element signature="method#cargarUsuarios#0;class#UsuarioV#0" />
+            <element signature="method#guardarUsuario#0;class#UsuarioV#0" />
+            <element signature="method#onDoubleClicked#0;class#UsuarioV#0" />
+            <element signature="method#actualizarUsuario#0;class#UsuarioV#0" />
+            <element signature="method#onClick$btnRegistros#0;class#UsuarioV#0" />
+            <element signature="method#onClick$btnRegistrosPoi#0;class#UsuarioV#0" />
+            <element signature="method#cargarUsuarios2#0;class#UsuarioV#0" />
           </folding>
         </state>
       </provider>

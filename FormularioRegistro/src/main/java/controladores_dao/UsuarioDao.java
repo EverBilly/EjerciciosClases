@@ -9,9 +9,13 @@ import lombok.extern.log4j.Log4j2;
 import modelos.Usuario;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
+import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Row;
+import org.jetbrains.annotations.NotNull;
 import vistas_modelos.UsuarioV;
 
 import javax.naming.NamingException;
@@ -20,8 +24,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.sql.*;
-import java.util.List;
-import java.util.Locale;
+import java.util.*;
 
 @Log4j2
 public class UsuarioDao {
@@ -106,22 +109,6 @@ public class UsuarioDao {
         return conn;
     }
 
-//    public void ejecutar(PreparedStatement consulta, int numero) {
-//
-//
-//        if(numero > 0) {
-//            try {
-//                consulta.setString(1, "Juan");
-//                consulta.setString(2, "Herrera");
-//                consulta.setString(3, "44662233");
-//                consulta.addBatch();
-//            } catch (SQLException e) {
-//                e.printStackTrace();
-//            }
-//            ejecutar(consulta, numero - 1);
-//        }
-//    }
-
 
     public void EjercicioPreparedStatement() {
         long inicio = System.currentTimeMillis();
@@ -161,7 +148,7 @@ public class UsuarioDao {
 
     //EXPORTAR A EXCEL
 
-    File file = new File("D:\\output.xls");
+    File file = new File("/plantilla/Reporteria.xlsx");
 
     public void Exportar(Usuario usuario) {
 
@@ -299,14 +286,14 @@ public class UsuarioDao {
         long inicio = System.currentTimeMillis();
         Connection connection;
         PreparedStatement preparedStatement = null;
-//        String url = "jdbc:mysql://localhost/aliens?serverTimezone=GMT";
-//        String user = "ever";
-//        String pass = "Ever2020--";
-        String db = "cons_rr_ss";
-        String user = "cons_rs_des";
-        String pass = "cons_rs_des";
-        String url = "jdbc:mysql://172.16.200.28:3306/"+db;
-
+        String url = "jdbc:mysql://localhost/java?serverTimezone=GMT";
+        String user = "ever";
+        String pass = "Ever2020--";
+//        String db = "cons_rr_ss";
+//        String user = "cons_rs_des";
+//        String pass = "cons_rs_des";
+//        String url = "jdbc:mysql://172.16.200.28:3306/"+db;
+        Logger log = LogManager.getLogger(UsuarioDao.class);
 
         try {
             Class.forName("com.mysql.jdbc.Driver");
@@ -314,7 +301,7 @@ public class UsuarioDao {
 
             Statement statement = connection.createStatement();
 
-            FileOutputStream fileOut = new FileOutputStream("D:\\Nuevo.xls");
+            FileOutputStream fileOut = new FileOutputStream("/Descargas/Reporteria.xlsx");
             HSSFWorkbook workbook = new HSSFWorkbook();
             HSSFSheet worksheet = workbook.createSheet("Hoja1");
 
@@ -326,43 +313,45 @@ public class UsuarioDao {
             row.createCell(18).setCellValue("ule");
 
             Row row1;
-            ResultSet resultSet = statement.executeQuery("SELECT -- CV.ID_CONVERSACION,\n" +
-                    "   \t(SELECT NOMBRE_USUARIO FROM USUARIOS WHERE ID_USUARIO = CV.ID_USUARIO_INICIO) ABRE, \n" +
-                    "   \tCV.ID_USUARIO, \n" +
-                    "   \t(SELECT NOMBRE_USUARIO FROM USUARIOS WHERE ID_USUARIO = CV.ID_USUARIO) CIERRA, \n" +
-                    "   \tCV.NOMBRE_RED_SOCIAL DESTINO, \n" +
-                    "   \tCV.NOMBRE_BOT, \n" +
-                    "   \tCV.ID_RRSS_EXTERNO ORIGEN, \n" +
-                    "   \tDATE(CV.FECHA_ATENCION) FECHA_INICIO, \n" +
-                    "   \tCONCAT('',TIME(CV.FECHA_ATENCION)) HORA_INICIO, \n" +
-                    "   \tDATE(CV.FECHA_FINALIZACION) FECHA_FINAL, \n" +
-                    "   \tCONCAT('',TIME(CV.FECHA_FINALIZACION)) HORA_FINAL, \n" +
-                    "   \tMC.DURACION, \n" +
-                    "   \tMC.TIEMPO_COLA COLA, \n" +
-                    "       CONCAT(MC.FECHA_PRIMER_MENSAJE_CLIENTE,' ', MC.HORA_PRIMER_MENSAJE_CLIENTE ) PRIMER_RESPUESTA, \n" +
-                    "   \tMC.TME_CLIENTE TIEMPO_PRIMERA, \n" +
-                    "   \tMC.TME, \n" +
-                    "   \tTG.GESTION CATEGORIA, \n" +
-                    "   \tTR.RESOLUCION TIPO_RESOLUCION, \n" +
-                    "   \tR.RESOLUCION, \n" +
-                    "   \tR.OPCION_BOT OPCION_MENU_BOT \n" +
-                    "   FROM \n" +
-                    "   \tCONVERSACIONES_REPORTE AS CV \n" +
-                    "   \tLEFT OUTER JOIN TIPOS_GESTION TG ON TG.ID_TIPO_GESTION = CV.ID_GESTION \n" +
-                    "   \tINNER JOIN RESOLUCIONES R  ON R.ID_CONVERSACION = CV.ID_CONVERSACION \n" +
-                    "   \tINNER JOIN TIPOS_RESOLUCIONES TR ON TR.ID_TIPO_RESOLUCION = R.TIPO_RESOLUCION  \n" +
-                    "   \tLEFT OUTER JOIN METRICAS_CONVERSACION MC  ON MC.ID_CONVERSACION = CV.ID_CONVERSACION \n" +
-                    " WHERE CV.FECHA_FINALIZACION IS NOT NULL AND \n" +
-                    "\t\tCV.ESTADO = 3  \n" +
-                    "\t\tAND   cast(CV.FECHA_ATENCION AS DATE) between '2020-08-01' and '2020-08-30'\n" +
-                    "   AND CV.ID_EMPRESA = 17 \n" +
-                    "\t ORDER BY CV.ID_CONVERSACION DESC;");
+            ResultSet resultSet = statement.executeQuery("select * from usuario");
+//            ResultSet resultSet = statement.executeQuery("SELECT -- CV.ID_CONVERSACION,\n" +
+//                    "   \t(SELECT NOMBRE_USUARIO FROM USUARIOS WHERE ID_USUARIO = CV.ID_USUARIO_INICIO) ABRE, \n" +
+//                    "   \tCV.ID_USUARIO, \n" +
+//                    "   \t(SELECT NOMBRE_USUARIO FROM USUARIOS WHERE ID_USUARIO = CV.ID_USUARIO) CIERRA, \n" +
+//                    "   \tCV.NOMBRE_RED_SOCIAL DESTINO, \n" +
+//                    "   \tCV.NOMBRE_BOT, \n" +
+//                    "   \tCV.ID_RRSS_EXTERNO ORIGEN, \n" +
+//                    "   \tDATE(CV.FECHA_ATENCION) FECHA_INICIO, \n" +
+//                    "   \tCONCAT('',TIME(CV.FECHA_ATENCION)) HORA_INICIO, \n" +
+//                    "   \tDATE(CV.FECHA_FINALIZACION) FECHA_FINAL, \n" +
+//                    "   \tCONCAT('',TIME(CV.FECHA_FINALIZACION)) HORA_FINAL, \n" +
+//                    "   \tMC.DURACION, \n" +
+//                    "   \tMC.TIEMPO_COLA COLA, \n" +
+//                    "       CONCAT(MC.FECHA_PRIMER_MENSAJE_CLIENTE,' ', MC.HORA_PRIMER_MENSAJE_CLIENTE ) PRIMER_RESPUESTA, \n" +
+//                    "   \tMC.TME_CLIENTE TIEMPO_PRIMERA, \n" +
+//                    "   \tMC.TME, \n" +
+//                    "   \tTG.GESTION CATEGORIA, \n" +
+//                    "   \tTR.RESOLUCION TIPO_RESOLUCION, \n" +
+//                    "   \tR.RESOLUCION, \n" +
+//                    "   \tR.OPCION_BOT OPCION_MENU_BOT \n" +
+//                    "   FROM \n" +
+//                    "   \tCONVERSACIONES_REPORTE AS CV \n" +
+//                    "   \tLEFT OUTER JOIN TIPOS_GESTION TG ON TG.ID_TIPO_GESTION = CV.ID_GESTION \n" +
+//                    "   \tINNER JOIN RESOLUCIONES R  ON R.ID_CONVERSACION = CV.ID_CONVERSACION \n" +
+//                    "   \tINNER JOIN TIPOS_RESOLUCIONES TR ON TR.ID_TIPO_RESOLUCION = R.TIPO_RESOLUCION  \n" +
+//                    "   \tLEFT OUTER JOIN METRICAS_CONVERSACION MC  ON MC.ID_CONVERSACION = CV.ID_CONVERSACION \n" +
+//                    " WHERE CV.FECHA_FINALIZACION IS NOT NULL AND \n" +
+//                    "\t\tCV.ESTADO = 3  \n" +
+//                    "\t\tAND   cast(CV.FECHA_ATENCION AS DATE) between '2020-08-01' and '2020-08-30'\n" +
+//                    "   AND CV.ID_EMPRESA = 17 \n" +
+//                    "\t ORDER BY CV.ID_CONVERSACION DESC;");
 
             while (resultSet.next()) {
                 int a = resultSet.getRow();
-                row1 = worksheet.createRow((short)a);
-                for(int i = 0; i <= 18; i++) {
-                    row1.createCell(i).setCellValue(resultSet.getString(i+1));
+//                System.out.println(a);
+                row = worksheet.createRow((short)a);
+                for(int i = 0; i <= 3; i++) {
+                    row.createCell(i).setCellValue(resultSet.getString(i+1));
                 }
             }
             workbook.write(fileOut);
@@ -371,7 +360,7 @@ public class UsuarioDao {
             resultSet.close();
             statement.close();
             connection.close();
-            System.out.println("Exportado");
+            log.info("Exportado");
 
         }catch(SQLException ex){
             System.out.println(ex);
@@ -382,7 +371,7 @@ public class UsuarioDao {
         }
         log.info("Finalizado");
         long fin = System.currentTimeMillis();
-        System.out.println("PreparedStatement: " + (fin - inicio) + " Inicio: "+inicio + " Fin: "+fin );
+        System.out.println("PreparedStatement: " + (fin - inicio));
 
     }
 
@@ -417,6 +406,7 @@ public class UsuarioDao {
         }
         return result;
     }
+
 }
 //    <?xml version="1.0" encoding="UTF-8"?>
 //<!--

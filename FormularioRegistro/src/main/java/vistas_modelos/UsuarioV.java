@@ -28,7 +28,7 @@ public class UsuarioV  extends Usuario {
     public void doAfterCompose(Component comp) throws Exception {
 
         super.doAfterCompose(comp);
-        cargarUsuarios();
+//        cargarUsuarios();
     }
 
     public static DataSource getDataSource() throws NamingException {
@@ -37,6 +37,10 @@ public class UsuarioV  extends Usuario {
         DataSource dataSource = (DataSource) initialContext.lookup("java:/comp/env/jdbc/java");
 
         return dataSource;
+    }
+
+    public void onClick$btnCargar(Event event) {
+        cargarUsuarios();
     }
 
     private void cargarUsuarios() {
@@ -166,7 +170,7 @@ public class UsuarioV  extends Usuario {
     public void onClick$btnExportar(Event event) throws NamingException {
         Messagebox.show("Presionado");
         Usuario usuario = new Usuario();
-        UsuarioDao.getInstance().Exportar(usuario);
+        UsuarioDao.getInstance().ExportaPOI(usuario);
     }
 
     public void onClick$btnRegistros(Event event) throws NamingException {
@@ -179,4 +183,17 @@ public class UsuarioV  extends Usuario {
         UsuarioDao.getInstance().ExportaPOI(usuario);
     }
 
+
+    public List<Usuario> cargarUsuarios2() {
+        List<Usuario> usuarios = null;
+
+        try {
+            usuarios = UsuarioDao.getInstance().mostrarUsuarios();
+        } catch (SQLException e) {
+            log.debug("Error" + e.getMessage());
+        } catch (NamingException e) {
+            log.debug("No se ha mostrado nada: " + e.getMessage());
+        }
+            return usuarios;
+    }
 }

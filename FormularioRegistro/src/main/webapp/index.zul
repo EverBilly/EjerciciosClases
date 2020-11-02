@@ -1,7 +1,8 @@
 <zk>
 	<window
 			border="normal" hflex="min" style="margin-top:20px; margin-left:20px;"
-			title="Registro de Usuarios" apply="controladores.MyViewModel">
+			title="Registro de Usuarios">
+		<!--apply="vistas_modelos.UsuarioV"-->
 			<grid hflex="min">
 				<auxhead>
 					<auxheader colspan="2" label="Registro" style="font-size:16px;"/>
@@ -90,5 +91,21 @@ class Person {
 				</listitem>
 			</template>
 		</listbox>
+
+		<div apply="org.zkoss.bind.BindComposer"
+			 viewModel="@id('vm') @init('vistas_modelo.UsuarioV')">
+
+			<listbox id="list" model="@bind(vm.cargarUsuarios2)" width="200px" height="540px">
+				<listhead>
+					<listheader label="Load On Demand" sort="auto" />
+				</listhead>
+			</listbox>
+
+			<style>
+				div.z-listbox-body .z-listcell {
+				padding: 2px 5px;
+				}
+			</style>
+		</div>
 	</window>
 </zk>

@@ -3,19 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="a29d0d5b-fe72-4fa6-9b3a-be384fa89bb9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../../AppsWeb/simple_webapp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../AppsWeb/simple_webapp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AppsWeb/web1/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../AppsWeb/web1/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AppsWeb/web1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../AppsWeb/web1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ConexionMysql/ConexionMysql.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ConexionMysql/ConexionMysql.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../FormularioRegistro/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../FormularioRegistro/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../FormularioRegistro/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../FormularioRegistro/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../FormularioRegistro/src/main/java/controladores_dao/UsuarioDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../FormularioRegistro/src/main/java/controladores_dao/UsuarioDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../FormularioRegistro/src/main/java/vistas_modelos/UsuarioV.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../FormularioRegistro/src/main/java/vistas_modelos/UsuarioV.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../FormularioRegistro/src/main/webapp/UserPrueba.zul" beforeDir="false" afterPath="$PROJECT_DIR$/../../FormularioRegistro/src/main/webapp/UserPrueba.zul" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../FormularioRegistro/target/FormularioRegistro.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../FormularioRegistro/target/FormularioRegistro.war" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../FormularioRegistro/target/FormularioRegistro/UserPrueba.zul" beforeDir="false" afterPath="$PROJECT_DIR$/../../FormularioRegistro/target/FormularioRegistro/UserPrueba.zul" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../FormularioRegistro/target/FormularioRegistro/WEB-INF/classes/controladores_dao/UsuarioDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../FormularioRegistro/target/FormularioRegistro/WEB-INF/classes/controladores_dao/UsuarioDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../FormularioRegistro/target/FormularioRegistro/WEB-INF/classes/vistas_modelos/UsuarioV.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../FormularioRegistro/target/FormularioRegistro/WEB-INF/classes/vistas_modelos/UsuarioV.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../FormularioRegistro/target/classes/controladores_dao/UsuarioDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../FormularioRegistro/target/classes/controladores_dao/UsuarioDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../FormularioRegistro/target/classes/vistas_modelos/UsuarioV.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../FormularioRegistro/target/classes/vistas_modelos/UsuarioV.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../prueba/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../prueba/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -67,8 +64,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ConexionMysql.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="85" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="85" />
+            <state relative-caret-position="12">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -102,7 +99,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -112,12 +108,18 @@
             </path>
             <path>
               <item name="ConexionMysql" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ConexionMysql" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ConexionMysql" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -181,11 +183,14 @@
       <workItem from="1602273715772" duration="9000" />
       <workItem from="1602394076234" duration="55000" />
       <workItem from="1603726274568" duration="3270000" />
+      <workItem from="1604024252175" duration="380000" />
+      <workItem from="1604024656112" duration="614000" />
+      <workItem from="1604070715455" duration="12000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64596000" />
+    <option name="totallyTimeSpent" value="65602000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -198,9 +203,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.24962178" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -222,16 +226,16 @@
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="bottom" id="Log4jMonitor" order="14" />
-      <window_info anchor="right" id="RestServices" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Maven" order="3" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.32980332" />
+      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.35854766" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="RestServices" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,13 +248,7 @@
     <entry file="dbSrc:///c252c5c9/93f2a35e-2998-437a-900f-ef9581d1e1a5/schema/java/routine/InsertarUsuario@().sql" />
     <entry file="dbSrc:///c252c5c9/93f2a35e-2998-437a-900f-ef9581d1e1a5/schema/java/routine/InsertarUsuario@(int(11)).sql" />
     <entry file="dbSrc:///c252c5c9/93f2a35e-2998-437a-900f-ef9581d1e1a5/schema/java/routine/MostrarUsuarios@(int(11)).sql" />
-    <entry file="das://93f2a35e-2998-437a-900f-ef9581d1e1a5/schema/java/table/usuario">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://93f2a35e-2998-437a-900f-ef9581d1e1a5/schema/java/table/usuario" />
     <entry file="dbSrc:///a70875c0/93f2a35e-2998-437a-900f-ef9581d1e1a5/schema/java/routine/MostrarUsuarios@(int(11)).sql" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_72/src.zip!/java/sql/CallableStatement.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -317,8 +315,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ConexionMysql.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="85" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="85" />
+        <state relative-caret-position="12">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
