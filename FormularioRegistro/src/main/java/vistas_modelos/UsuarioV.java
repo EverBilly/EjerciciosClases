@@ -173,6 +173,11 @@ public class UsuarioV  extends Usuario {
         UsuarioDao.getInstance().ExportaPOI(usuario);
     }
 
+    public void onClick$ExportarNuevo(Event event) throws NamingException {
+        Usuario usuario = new Usuario();
+        UsuarioDao.getInstance().ExportaPorPrueba(usuario);
+    }
+
     public void onClick$btnRegistros(Event event) throws NamingException {
         Messagebox.show("Registros");
         UsuarioDao.getInstance().EjercicioPreparedStatement();

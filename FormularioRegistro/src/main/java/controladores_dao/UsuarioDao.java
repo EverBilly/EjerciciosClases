@@ -15,6 +15,9 @@ import org.apache.logging.log4j.Logger;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.streaming.SXSSFRow;
+import org.apache.poi.xssf.streaming.SXSSFSheet;
+import org.apache.poi.xssf.streaming.SXSSFWorkbook;
 import org.jetbrains.annotations.NotNull;
 import vistas_modelos.UsuarioV;
 
@@ -376,6 +379,71 @@ public class UsuarioDao {
     }
 
     /////////////////////////////////////////////////////////////////////
+
+    public void ExportaPorPrueba(Usuario usuario) {
+        long inicio = System.currentTimeMillis();
+        Connection connection;
+        PreparedStatement preparedStatement = null;
+        String url = "jdbc:mysql://localhost/java?serverTimezone=GMT";
+        String user = "ever";
+        String pass = "Ever2020--";
+//        String db = "cons_rr_ss";
+//        String user = "cons_rs_des";
+//        String pass = "cons_rs_des";
+//        String url = "jdbc:mysql://172.16.200.28:3306/"+db;
+        Logger log = LogManager.getLogger(UsuarioDao.class);
+
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            connection = DriverManager.getConnection(url, user, pass);
+
+            Statement statement = connection.createStatement();
+
+            FileOutputStream fileOut = new FileOutputStream(new File("D:\\Resoluciones.xls"));
+            SXSSFWorkbook workbook = new SXSSFWorkbook();
+            SXSSFSheet worksheet = workbook.createSheet("Hoja 1");
+//            HSSFWorkbook workbook = new HSSFWorkbook();
+//            HSSFSheet worksheet = workbook.createSheet("Hoja1");
+
+//            Row row = worksheet.createRow((short)0);
+            SXSSFRow row = worksheet.createRow((short)0);
+
+            row.createCell(0).setCellValue("name");
+            row.createCell(1).setCellValue("points");
+            row.createCell(2).setCellValue("id");
+            row.createCell(3).setCellValue("ule");
+
+            ResultSet resultSet = statement.executeQuery("select * from usuario");
+
+            while (resultSet.next()) {
+                int a = resultSet.getRow();
+//                System.out.println(a);
+                row = worksheet.createRow(a);
+                for(int i = 0; i < 4; i++) {
+                    row.createCell(i).setCellValue(resultSet.getString(i+1));
+                }
+            }
+            workbook.write(fileOut);
+            fileOut.flush();
+            fileOut.close();
+            resultSet.close();
+            statement.close();
+            connection.close();
+            log.info("Exportado");
+
+        }catch(SQLException ex){
+            System.out.println(ex);
+        }catch(IOException ioe){
+            System.out.println(ioe);
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        log.info("Finalizado");
+        long fin = System.currentTimeMillis();
+        System.out.println("PreparedStatement: " + (fin - inicio));
+
+
+    }
 
 
 //    ACTUALIZAR USUARIO

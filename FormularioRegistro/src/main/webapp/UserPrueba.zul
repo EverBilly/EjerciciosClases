@@ -35,6 +35,7 @@
         <button id="btnExportar" label="Exportar Excel"/>
         <button id="btnRegistros" label="Registros"/>
         <button id="btnRegistrosPoi" label="Registros POI"/>
+        <button id="ExportarNuevo" label="Exportar Prueba"/>
 
         <grid>
             <auxhead>
